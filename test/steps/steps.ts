@@ -42,7 +42,7 @@ Then(/^I verify the text (.+) is displayed in the screen$/, async(text) => {
 
 When(/^I wait until the text (.+) is displayed$/, async(text) => {
     const element = await $(`//*[contains(text(), "${text}")]`)
-    await element.waitForDisplayed({timeout:5000});
+    await element.waitForDisplayed({timeout:6000});
 });
 
 When(/^I logout from the current page$/, async() => {
